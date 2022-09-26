@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [quote, setQuote] = useState([]);
@@ -12,6 +12,10 @@ function App() {
     setQuote(data.slip.advice);
     setId(data.slip.id);
   };
+
+  useEffect(() => {
+    fetchAdvice();
+  }, []);
 
   return (
     <div className="container">
