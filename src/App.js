@@ -21,6 +21,18 @@ function App() {
         <div className="pattern-divider"></div>
         <button className="random-advice_btn" onClick={fetchAdvice}></button>
       </div>
+
+      <div class="attribution">
+        Challenge by{" "}
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor
+        </a>
+        . Coded by{" "}
+        <a href="https://patriktomek.cz/" target="_blank">
+          Patrik Tomek
+        </a>
+        .
+      </div>
     </div>
   );
 }
